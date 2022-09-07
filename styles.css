@@ -1,0 +1,168 @@
+/* Design System
+01- Typography
+font-family: 'Inconsolata', 'Space Mono' 
+font-weights: 700, 400 & 700
+
+02-Colors
+accent-color: #333
+tint: #4f4f4f
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: #333;
+}
+header
+{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 4.8rem;
+}
+
+.title
+{
+    font-size: 2.4rem;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+}
+
+/* Error Section */
+.error-info
+{
+   padding: 8rem 4.8rem;
+}
+.container
+{
+    max-width: 118rem;
+    margin: 0 auto;
+}
+.grid--2-cols
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.img-box img
+{
+   width: 75%;
+}
+.text-box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.text-head
+{
+    font-size: 6.4rem;
+}
+.text-info
+{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #4f4f4f;
+}
+.btn
+{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: #333;
+    color: #fff;
+    padding: 1.6rem 3.2rem;
+    margin-top: 2.4rem;
+    align-self: start;
+}
+footer
+{
+    text-align: center;
+    color: #555;
+    transform: translateY(5rem);
+
+}
+footer a
+{
+    text-decoration: none;
+    color: #555;
+    border-bottom: 2px solid #ff0000a1;
+}
+
+@media(max-width:66em)
+{
+    html
+    {
+        font-size: 56.25%;
+    }
+}
+
+@media(max-width:59.5em)
+{
+    html
+    {
+        font-size: 62.5%;
+    }
+    .grid--2-cols
+    {
+        grid-template-columns: 1fr;
+        gap:4.8rem;
+    }
+    footer
+    {
+        margin-bottom: 6rem;
+    }   
+}
+
+@media(max-width:34em)
+{
+    header
+    {
+        padding: 4.8rem 3.2rem 0;
+    }
+    .title
+    {
+        font-size: 2rem;
+    }
+    .error-info
+    {
+       padding: 8rem 3.2rem 2.4rem;
+    }
+    .img-box img
+    {
+       width: 100%;
+    }
+    .text-head
+    {
+        font-size: 3.6rem;
+    }
+    .text-info
+    {
+        font-size: 1.8rem;
+    }
+    footer
+    {
+        padding:0 3.2rem;
+        text-align: left;
+        transform: translateY(3rem);
+        margin-bottom: 4rem;
+    }
+}
+
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
